@@ -1,0 +1,8 @@
+2020-08-20 16:28:13,530 :INFO :test_cart :
+2020-08-20 16:28:19,434 :INFO :test_cart :Total amount of your cart is 388
+2020-08-20 16:28:19,466 :INFO :test_cart :Your order after Discount is 349.2 
+2020-08-20 16:28:19,466 :INFO :test_cart :your Discount amount is 38.80000000000001
+2020-08-20 16:29:52,406 :INFO :test_cart :
+2020-08-20 16:29:58,273 :INFO :test_cart :Total amount of your cart is 388
+2020-08-20 16:29:58,304 :INFO :test_cart :Your order after Discount is 349.2 
+2020-08-20 16:29:58,366 :INFO :test_cart :your Discount amount is 38.80000000000001
