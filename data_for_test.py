@@ -10,3 +10,5 @@ class Datas:
     count = "Israel"
     Home_logo = "GREENKART"
     flight_title = "QAClickJet - Flight Booking for Domestic and International, Cheap Air Tickets"
+    fruit_in_topdeals = "Banana"
+    cart_empty_message = "You cart is empty!"

@@ -21,28 +21,53 @@ class TestCases(BaseClass):
         homepage = HomePage(self.driver)
         title = homepage.get_title(Datas.site_title)
         assert title == Datas.site_title
+
     """checking for the top deals link presence"""
     def test_for_presence_of_TopDeals(self):
         homepage = HomePage(self.driver)
         flag1 = homepage.get_presence_of_topDeals()
         assert flag1
-
+    """verifying for the flight application working"""
     def test_for_flight_application(self):
         log = self.GetLogger()
         log.info("getting titile of application" +Datas.flight_title)
         homepage = HomePage(self.driver)
         homepage.click_flight()
-        homepage.get_flight()
+        homepage.get_switch_window()
         flag3 = homepage.get_title(Datas.flight_title)
         assert flag3
         self.driver.close()
+    """verifying the topdeals page working"""
+    def test_feauters_in_top_deals(self):
+        time.sleep(3)
+        homepage = HomePage(self.driver)
+        homepage.get_switch_back_window()
+        homepage.get_topdeals_page()
+        homepage.switch_windows()
+        homepage.get_page_5()
+        fruit_name = homepage.get_fruit_name()
+        assert fruit_name == Datas.fruit_in_topdeals
+        self.driver.close()
+    """verify empty cart message if no items selected """
+    def test_for_empty_cart(self):
+        time.sleep(3)
+        homepage = HomePage(self.driver)
+        homepage.get_switch_back_window()
+
+        homepage.get_click_cart_icon()
+        message = homepage.get_cart_message()
+        time.sleep(2)
+        homepage.get_click_cart_icon()
+        if message == Datas.cart_empty_message:
+            assert True
+        else:
+            assert False
 
 
     """testing for the presence of element Item in the home page"""
     def test_for_presence_of_Item(self):
-        time.sleep(3)
+        time.sleep(2)
         homepage = HomePage(self.driver)
-        homepage.get_back_from_flight()
         flag2 = homepage.get_presence_cart_icon_items()
         assert flag2
     """testing for the add vegitables is present in the given input"""

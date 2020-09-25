@@ -17,6 +17,12 @@ class HomePage(Utility):
     click_cart_icon = (By.XPATH, "//a[@class='cart-icon']//img[contains(@class,'')]")
     click_proceed_button = (By.XPATH, "//button[contains(text(),'PROCEED TO CHECKOUT')]")
     flight_locator = (By.LINK_TEXT, "Flight Booking")
+    select_page_5_locator = (By.XPATH, "//span[contains(text(),'4')]")
+    fruit_name_locator = (By.XPATH, "//td[contains(text(),'Banana')]")
+    one_item_select_locator = (By.XPATH, "//div[@class='products']//div[1]//div[3]//button[1]")
+    cart_empty_text = (By.XPATH, "//div[@class='cart-preview active']//div//div//h2[contains(text(),'You cart is empty!')]")
+
+    cancel_item = (By.CLASS_NAME, "product-remove")
 
     def __init__(self,driver):
         super().__init__(driver)
@@ -34,10 +40,10 @@ class HomePage(Utility):
     def click_flight(self):
         self.click(self.flight_locator)
 
-    def get_flight(self):
+    def get_switch_window(self):
         self.switch_windows()
 
-    def get_back_from_flight(self):
+    def get_switch_back_window(self):
         self.switch_back_window()
 
     def get_keys(self,text):
@@ -50,6 +56,26 @@ class HomePage(Utility):
 
     def get_click_proceed_icon(self):
         self.click(self.click_proceed_button)
+
+    def get_topdeals_page(self):
+        self.click(self.presence)
+
+    def get_page_5(self):
+        self.click(self.select_page_5_locator)
+
+    def get_fruit_name(self):
+        return self.presence_of_element(self.fruit_name_locator)
+
+    def get_click_one_item(self):
+        self.click(self.one_item_select_locator)
+
+    def get_cart_message(self):
+        return self.presence_of_element(self.cart_empty_text)
+
+    def get_cancel_item(self):
+        self.click(self.cancel_item)
+
+
 
 
 
