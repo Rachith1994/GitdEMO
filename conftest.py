@@ -8,7 +8,7 @@ def pytest_addoption(parser):
     )
 
 @pytest.fixture(scope="class")
-def Setup(request):
+def invokeSetup(request):
     browser_name = request.config.getoption("browser_name")
     if browser_name =="chrome":
         driver = webdriver.Chrome(executable_path="D:\python\driver\chromedriver.exe")
@@ -19,3 +19,5 @@ def Setup(request):
     request.cls.driver = driver
     yield
     driver.close()
+
+

@@ -242,34 +242,10 @@ function filter_table(elem) {
     not_found_message.hidden = !all_rows_hidden;
 }
 </script>
-    <h1>report.html</h1>
-    <p>Report generated on 20-Aug-2020 at 16:59:27 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
+    <h1>=</h1>
+    <p>Report generated on 24-Sep-2020 at 18:16:45 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
-      <tr>
-        <td>BUILD_ID</td>
-        <td>5</td></tr>
-      <tr>
-        <td>BUILD_NUMBER</td>
-        <td>5</td></tr>
-      <tr>
-        <td>BUILD_TAG</td>
-        <td>jenkins-GreenKart-5</td></tr>
-      <tr>
-        <td>BUILD_URL</td>
-        <td><a href="http://localhost:8080/job/GreenKart/5/" target="_blank">http://localhost:8080/job/GreenKart/5/</a></td></tr>
-      <tr>
-        <td>EXECUTOR_NUMBER</td>
-        <td>0</td></tr>
-      <tr>
-        <td>JENKINS_URL</td>
-        <td><a href="http://localhost:8080/" target="_blank">http://localhost:8080/</a></td></tr>
-      <tr>
-        <td>JOB_NAME</td>
-        <td>GreenKart</td></tr>
-      <tr>
-        <td>NODE_NAME</td>
-        <td>master</td></tr>
       <tr>
         <td>Packages</td>
         <td>{"pluggy": "0.13.1", "py": "1.9.0", "pytest": "5.4.3"}</td></tr>
@@ -281,13 +257,10 @@ function filter_table(elem) {
         <td>{"html": "2.1.1", "metadata": "1.10.0"}</td></tr>
       <tr>
         <td>Python</td>
-        <td>3.8.3</td></tr>
-      <tr>
-        <td>WORKSPACE</td>
-        <td>C:\Users\Admin\PycharmProjects\Cart</td></tr></table>
+        <td>3.8.3</td></tr></table>
     <h2>Summary</h2>
-    <p>0 tests ran in 0.12 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">1 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>0 tests ran in 0.02 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -297,13 +270,4 @@ function filter_table(elem) {
           <th class="sortable numeric" col="duration">Duration</th>
           <th>Links</th></tr>
         <tr hidden="true" id="not-found-message">
-          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="error results-table-row">
-        <tr>
-          <td class="col-result">Error</td>
-          <td class="col-name">test_car.py::TestVeg::test_cart::setup</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">request = &lt;SubRequest &#x27;Setup&#x27; for &lt;Function test_cart&gt;&gt;<br/><br/>    @pytest.fixture(scope=&quot;class&quot;)<br/>    def Setup(request):<br/>        browser_name = request.config.getoption(&quot;browser_name&quot;)<br/>        if browser_name ==&quot;chrome&quot;:<br/>            driver = webdriver.Chrome(executable_path=&quot;D:\python\driver\chromedriver.exe&quot;)<br/>        elif browser_name == &quot;firefox&quot;:<br/>            driver = webdriver.Firefox(executable_path=&quot;D:\python\driver\geckodriver.exe&quot;)<br/>&gt;       driver.get(&quot;https://rahulshettyacademy.com/seleniumPractise/#/&quot;)<br/><span class="error">E       UnboundLocalError: local variable &#x27;driver&#x27; referenced before assignment</span><br/><br/>..\conftest.py:17: UnboundLocalError<br/></div></td></tr></tbody></table></body></html>
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead></table></body></html>
